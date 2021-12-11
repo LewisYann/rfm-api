@@ -1,7 +1,7 @@
 from config import db
 
 
-class Missions(db.Document):
+class Mission(db.Document):
     id=db.ObjectId()
     id_people = db.StringField()
     name = db.StringField()
@@ -9,6 +9,7 @@ class Missions(db.Document):
     model = db.db.StringField()
     parcour =db.StringField()
     surface = db.StringField()
+    heurs_vol=db.IntField()
 
     def to_json(self):
         return {
@@ -18,6 +19,7 @@ class Missions(db.Document):
             "description": self.description,
             "model": self.model,
             "parcour": self.parcour,
-            "surface": self.surface
+            "surface": self.surface,
+            "heurs_vol": self.heurs_vol
 
         }
