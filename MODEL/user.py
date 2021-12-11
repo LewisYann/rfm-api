@@ -6,13 +6,12 @@ class User(db.Document):
     login = db.StringField()
     password = db.StringField()
     idUser = db.StringField()
-    is_active = db.Boolean()
-    is_authorization = db.Integer()
+    is_active = db.BoolField()
+    is_authorization = db.IntField()
     token = db.StringField()
     refresh_token = db.StringField()
     def to_json(self):
         return {
-            "name": self.name,
             "login": self.login,
             "password": self.password,
             "idUser": self.idUser,
