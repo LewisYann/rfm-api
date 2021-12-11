@@ -6,8 +6,8 @@ class Missions(db.Document):
     id_people = db.StringField()
     name = db.StringField()
     description = db.StringField()
-    model = db.ListField()
-    parcour = db.ListField()
+    model = db.db.StringField()
+    parcour =db.StringField()
     surface = db.StringField()
 
     def to_json(self):
