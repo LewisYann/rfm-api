@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/Downloads/api_example/.idea/api_example.iml" filepath="$USER_HOME$/Downloads/api_example/.idea/api_example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../bnb_correct/project_cnn/.idea/project_cnn.iml" filepath="$PROJECT_DIR$/../bnb_correct/project_cnn/.idea/project_cnn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/rfm-api.iml" filepath="$PROJECT_DIR$/.idea/rfm-api.iml" />
     </modules>
   </component>

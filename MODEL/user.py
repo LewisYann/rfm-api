@@ -2,12 +2,12 @@ from config import db
 
 
 class User(db.Document):
-    id=db.ObjectId()
     login = db.StringField()
     password = db.StringField()
     idUser = db.StringField()
-    is_active = db.BoolField()
-    is_authorization = db.IntField()
+    people = db.ListField()
+    is_active = db.BooleanField()
+    authorization = db.IntField()
     token = db.StringField()
     refresh_token = db.StringField()
     def to_json(self):
@@ -15,8 +15,9 @@ class User(db.Document):
             "login": self.login,
             "password": self.password,
             "idUser": self.idUser,
+            "people": self.people,
             "is_active": self.is_active,
-            "is_authorization": self.is_authorization,
+            "authorization": self.authorization,
             "token": self.token,
             "refresh_token": self.refresh_token,
         }
